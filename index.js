@@ -10,7 +10,7 @@ function newImage(imgFile, left, bottom) {
 
 function newItem(itemFile, left, bottom) {
     let item = newImage(itemFile, left, bottom);
-    item.addEventListener('click', () => {
+    item.addEventListener('dblclick', () => {
         item.remove();
     });
 }

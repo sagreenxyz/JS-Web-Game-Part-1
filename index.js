@@ -15,9 +15,15 @@ function newItem(itemFile, left, bottom) {
     });
 }
 
+for (let x = 0; x < window.innerWidth; x += 100) {
+    for (let y = 0; y < window.innerHeight; y += 100) {
+        let imgFile;
+        newImage((y / window.innerHeight < 0.5) ? 'assets/grass.png' : 'assets/sky.png', x, y);
+    }
+}
+
 newImage('assets/green-character.gif', 100, 100);
 newImage('assets/pine-tree.png', 450, 200);
-
 
 newImage('assets/tree.png', 200, 300);
 newImage('assets/pillar.png', 350, 100);
